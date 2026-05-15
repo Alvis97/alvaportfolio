@@ -4,6 +4,13 @@
   --background: #171717;
   --foreground: #ffffff;
   --accent: #FEBA6D;
+
+}
+
+.light {
+  --background: #f5f0eb;
+  --foreground: #1c1613;
+
 }
 
 @theme inline {
@@ -20,12 +27,26 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
 body {
-  background: radial-gradient(ellipse at center, #493738 0%, #463536 5%, #1c1613 98%) !important;
+  background: radial-gradient(ellipse at center, #493738 0%, #463536 5%, #1c1613 98%);
   min-height: 100vh;
   color: var(--foreground);
   font-family: var(--font-inter);
   letter-spacing: 2px;
+}
+
+.light body {
+    background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 5%, #e0d8d0 98%);
+    color: #1c1613;
 }
 
 h1{

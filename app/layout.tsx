@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Onest } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/navigation";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,6 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${onest.variable} antialiased`}
     >
+      <Navigation/>
       <body className="min-h-full flex flex-col bg-yellow-500">{children}</body>
     </html>
   );
