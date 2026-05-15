@@ -27,6 +27,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${onest.variable} antialiased`}
+      suppressHydrationWarning
     >
       <Navigation/>
       <body className="min-h-full flex flex-col bg-yellow-500">{children}</body>
