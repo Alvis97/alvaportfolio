@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #171717;
+  --foreground: #ffffff;
+  --accent: #FEBA6D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: radial-gradient(ellipse at center, #493738 0%, #463536 5%, #1c1613 98%) !important;
+  min-height: 100vh;
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  letter-spacing: 2px;
+}
+
+h1{
+  font-weight: 700;
+  font-family: var(--font-mono);
+  letter-spacing: 3px;
+  line-height: 35px;
+}
+
+p{
+  font-family: var(--font-inter);
+  letter-spacing: 2px;
+  line-height: 25px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.icon-link {
+  transition: transform 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon-link:hover {
+  transform: scale(1.15);
+}
+
+.heart-bounce {
+  animation: heartFlow 5s ease-in-out infinite;
+}
+
+@keyframes heartFlow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.01);
+  }
+   100% {
+    transform: translateY(0px);
+  }
+}
