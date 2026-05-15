@@ -14,7 +14,8 @@ function LandingSection() {
         setTimeout(() => setCopied(false), 2000)
     }
   return (
-    <div className='flex flex-1 flex-col gap-0 items-center justify-center w-[100vw]   md:relative md:m-auto md:w-[80vw] md:max-w-[1300px] md:max-h-[750px]'>
+<div className='h-screen w-screen flex items-center justify-center relative'>
+<div className='flex flex-col gap-0 items-center justify-center w-full md:relative md:m-auto md:w-[80vw] md:max-w-[1300px] md:h-[100%]'>
         <div className='relative flex w-[65%] h-[120px] mx-auto md:absolute md:my-auto md:left-[5%] md:my-auto md:w-[95%] md:h-[65%] lg:h-[85%] '>
            <img className='absolute heart-bounce rotate-[-10deg] h-[100%] w-[28%] lg:left-[0%] md:w-[25%] md:h-[45%]' style={{animationDelay: '0s'}} src="/heart.svg" alt="heart"/>
            <img className='absolute heart-bounce rotate-[-130deg] h-[100%] w-[28%] left-[23%] bottom-3 md:left-[27%] md:top-0 md:w-[25%] md:h-[45%]' style={{animationDelay: '0.3s'}} src="/heart.svg" alt="heart"/>
@@ -51,7 +52,7 @@ function LandingSection() {
            
             </span>
         </div>
-
+</div>
     </div>
   )
 }
