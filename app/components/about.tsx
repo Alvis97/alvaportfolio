@@ -25,8 +25,8 @@ function About() {
             <p className='font-[var(--font-onest)] text-[var(--accent)] text-sm md:text-sm lg:text-sm'>
                 ABOUT
             </p>
-            <h1 className='font-[family-name:var(--font-onest)] text-2xl mb-3   md:text-3xl md:mb-2'>
-                DRAWN TO THE SPACE WHERE DESIGN MEETS CODE.
+            <h1 className='font-[family-name:var(--font-onest)] text-2xl max-w-150  mb-3 md:text-3xl md:mb-2'>
+                Drawn to the space where design meets code.
             </h1>
             <p className='pb-3'>
                 I'm a frontend developer with a strong eye for design, drawn to the space where visuals and code move 

@@ -29,8 +29,10 @@ export default function RootLayout({
       className={`${inter.variable} ${onest.variable} antialiased`}
       suppressHydrationWarning
     >
-      <Navigation/>
-      <body className="min-h-full flex flex-col bg-yellow-500">{children}</body>
+      <body className="min-h-full flex flex-col">
+          <Navigation/>
+        {children}
+      </body>
     </html>
   );
 }
