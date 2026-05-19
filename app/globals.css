@@ -63,14 +63,22 @@ p{
   font-weight: 400;
 }
 
+.a-link{
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.a-link :hover{
+  transform: scale(1.2);
+}
+
 .icon-link {
   transition: transform 0.2s;
   cursor: pointer;
-  display: inline-block;
 }
 
 .icon-link:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 .heart-bounce {
@@ -96,6 +104,11 @@ p{
   box-shadow: 
     inset -3px -3px 5px rgba(131, 92, 92, 0.32),
     inset 5px 5px 10px rgb(28, 20, 20);  
+  transition: transform 1s;  
+}
+
+.project-card:hover{
+  transform: scale(1.05);
 }
 
 .light .project-card {
@@ -103,4 +116,12 @@ p{
   box-shadow: 
     inset -3px -3px 10px rgba(255, 255, 255, 0.911),
     inset 5px 5px 10px rgb(159, 159, 159);  
+}
+
+.mobile-menu {
+  background: rgba(37, 31, 31, 0.908);
+}
+
+.light .mobile-menu {
+background: rgba(230, 219, 210, 0.908);
 }
