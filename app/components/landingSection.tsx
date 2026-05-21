@@ -30,8 +30,7 @@ function LandingSection() {
             <h1 className='font-[family-name:var(--font-onest)] text-2xl mb-3   md:text-3xl md:mb-2'
             >Frontend blockchain developer
             </h1>
-            <p>Curious at heart. I design, develop and dive deep into creative 
-                technologies - from web2 layouts to web3 experiments. 
+            <p>Frontend developer with a passion for design and Web3. I turn complex blockchain interactions into clean, intuitive experiences.
             </p>
             <span className='flex gap-6 w-fit m-auto my-5 [&>a]:hover:scale-110 [&>a]:transition-transform [&>a]cursor-pointer md:m-0 md:my-7'>
                 <a className='flex' href="">Learn more <MoveRight/></a>
