@@ -1,7 +1,8 @@
 "use client"
 
 import React, { useState } from 'react'
-import { projects } from "../data/projectCardData"
+import { projects } from "../data/projectData"
+import Link from 'next/link'
 
 function Projects() {
    const [category, setCategory] = useState("web3")
@@ -11,14 +12,17 @@ function Projects() {
             <div className='flex flex-row w-[80vw] overflow-x-auto gap-4 items-center lg:overflow-y-auto lg:flex-col lg:w-[100%]'>
 
                 {projects.filter(p => p.category === category).map((project, i) => (
-                     <a key={i} className='project-card flex-shrink-0 min-w-[80vw] flex flex-col-reverse justify-between items-center border-xl h-100 w-[70vw] cursor-pointer lg:h-90 lg:w-180 lg:flex-row lg:min-w-140'>
+                     <Link 
+                     key={i} 
+                     className='project-card flex-shrink-0 min-w-[80vw] flex flex-col-reverse gap-10 justify-between items-center border-xl h-100 w-[70vw] cursor-pointer lg:h-90 lg:w-180 lg:flex-row lg:min-w-140'
+                     href={`/projects/${project.slug}`}>
                         <div className='w-[100%] lg:w-150'>
                         <h1 className='text-xl lg:text-3xl'>{project.title}</h1>
-                        <p className='text-xs text-[var(--accent)] lg:text-sm'>{project.tech.join(", ")}</p>
-                        <p className='text-xs pt-3 lg:text-sm'>{project.description}</p>
+                        <p className='text-xs text-[var(--accent)] lg:text-sm'>{project.techStack.join(", ")}</p>
+                        <p className='text-xs pt-3 lg:text-sm'>{project.subtitle}</p>
                         </div>
-                        <img className='h-[60%] rounded-sm lg:h-[100%]' src={project.image} alt="" />
-                    </a>
+                        <img className='h-[60%] rounded-sm lg:h-[100%]' src={project.image[0]} alt="" />
+                    </Link>
                 ))}
 
             </div>
