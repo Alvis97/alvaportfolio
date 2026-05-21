@@ -1,6 +1,7 @@
 "use client"
 
 import { Menu, Moon, Sun } from 'lucide-react'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 function Navigation() {
@@ -41,27 +42,27 @@ function Navigation() {
             </button>
             { modalOpen && (
             <div className='mobile-menu fixed flex flex-col justify-center items-end p-10 gap-5 top-13 left-0 h-screen w-screen'>
-                  <a 
+                  <Link 
                     onClick={() => {setActive("Home"); setModalOpen(false)}}
-                    href="#landingSection"
+                    href="/#landingSection"
                     className='a-link'
                     >
                         Home
-                    </a>
-                    <a 
+                    </Link>
+                    <Link 
                     onClick={() => {setActive("About"); setModalOpen(false)}}
-                    href="#about"
+                    href="/#about"
                     className='a-link'
                     >
                         About
-                    </a>
-                    <a 
+                    </Link>
+                    <Link 
                     onClick={() => {setActive("Projects"); setModalOpen(false)}}
-                    href="#projects"
+                    href="/#projects"
                     className='a-link'
                     >
                         Projects
-                    </a>
+                    </Link>
                 <button onClick={() => setLightmode(!lightmode)}>
                 {lightmode ? ( <Sun/> ) : ( <Moon/> )}
         </button>
