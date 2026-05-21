@@ -118,6 +118,23 @@ p{
     inset 5px 5px 10px rgb(159, 159, 159);  
 }
 
+.button {
+  background: #352622;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 
+    -3px -3px 5px rgba(131, 92, 92, 0.32),
+    5px 5px 10px rgb(28, 20, 20);  
+  transition: transform 1s;  
+}
+
+.light .button {
+  background: #f0ebe6;
+  box-shadow: 
+    -3px -3px 10px rgba(255, 255, 255, 0.911),
+    5px 5px 10px rgb(159, 159, 159);  
+}
+
 .mobile-menu {
   background: rgba(37, 31, 31, 0.908);
 }

@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react'
 import { projects } from "../../data/projectData"
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, MoveRight } from 'lucide-react'
 import Link from 'next/link'
+import { FaGithub } from 'react-icons/fa'
 
 export default async function Page({params}: {params: Promise<{ slug: string }>}) {
     const { slug } = await params
@@ -45,12 +46,12 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
             </div>
         </div>
 
-        <div>
-            <a rel="stylesheet" href={pj.linkWebsite} />
-            <a rel="stylesheet" href={pj.linkGit} />
+        <div className='flex flex-col gap-5 my-8 md:flex-row md:gap-20 lg:gap-40'>
+            <a className='button flex items-center gap-3' rel="stylesheet" href={pj.linkWebsite}>Visit website <MoveRight/></a> 
+            <a className='button flex items-center gap-3' rel="stylesheet" href={pj.linkGit}>View code <FaGithub size={25}/></a>
         </div>
      
-     <div className='flex flex-col md:flex-row gap-5'>
+     <div className='flex text-sm flex-col mt-15 md:flex-row gap-5 lg:mt-15 lg:text-base'>
         {pj.image.map((image, i) => {
             return <img className='h-[400px] w-auto rounded-xl lg:h-[500px]' key={i} src={image}/>
         })}
