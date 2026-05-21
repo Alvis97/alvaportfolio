@@ -27,7 +27,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
                 </div>
             </div>
 
-            <img className='h-[400px] rounded-xl lg:h-[500]' src={pj.image[0]} alt="" />
+            <img className='h-[400px] rounded-xl lg:h-[500]' src={pj.video} alt="" />
         </div>
 
         <div className='py-10 flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-30 lg:my-20'>

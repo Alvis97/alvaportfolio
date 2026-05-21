@@ -25,7 +25,7 @@ export const projects: Project[] = [
                     "Track your token holdings with live 24h price changes",
                     "Browse your full NFT collection",
                     "See your latest transactions with dates and amounts"],
-        video: "",
+        video: "/mywalletGif.gif",
         challenges: "The biggest challenge was working with multiple Solana APIs simultaneously — fetching transaction history, token metadata and live price data each required different endpoints and data structures. Learning to handle async API calls, normalize the responses and display them cleanly was the core technical problem this project solved.",
         techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "@Solana/web3.js", "Solana Token Extensions"],
         linkWebsite: "https://my-wallet-dashboard-mu.vercel.app/",
