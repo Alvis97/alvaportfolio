@@ -36,8 +36,10 @@ function About() {
             {largeScreen ? (
 
             <p>
-            My focus right now is Solana. I'm fascinated by the challenge of making blockchain interactions feel natural and human. Connecting wallets, swapping tokens, minting NFTs, all wrapped in clean, thoughtful UI.
-            I work with React, TypeScript and Next.js, and I'm especially interested in how great design and decentralized technology can blend together. For me, Web3 is as much a creative space as a technical one.
+            My focus right now is blockchain development. I'm fascinated by the challenge of making decentralized interactions 
+            feel natural and human — connecting wallets, swapping tokens, minting NFTs, all wrapped in clean, thoughtful UI. 
+            Currently working with Solana, but driven by a broader curiosity for how great design and Web3 can blend together. 
+            For me, it's as much a creative space as a technical one.
             </p>
 
             ) : (
@@ -47,9 +49,11 @@ function About() {
             className='text-[var(--accent)]'
             onClick={() => setReadmore(!readmore)}>{ !readmore ? "Read less" : "Read more"}</button>
             { !readmore && (
-                  <p>
-            My focus right now is Solana. I'm fascinated by the challenge of making blockchain interactions feel natural and human. Connecting wallets, swapping tokens, minting NFTs, all wrapped in clean, thoughtful UI.
-            I work with React, TypeScript and Next.js, and I'm especially interested in how great design and decentralized technology can blend together. For me, Web3 is as much a creative space as a technical one.
+            <p>
+            My focus right now is blockchain development. I'm fascinated by the challenge of making decentralized 
+            interactions feel natural and human — connecting wallets, swapping tokens, minting NFTs, all wrapped 
+            in clean, thoughtful UI. Currently working with Solana, but driven by a broader curiosity for how great
+             design and Web3 can blend together. For me, it's as much a creative space as a technical one.
             </p>
             )}
             </>

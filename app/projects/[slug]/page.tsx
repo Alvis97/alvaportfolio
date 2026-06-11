@@ -11,9 +11,11 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
     if (!pj) return <div>Project not found</div>
   return (
     <div className='flex flex-col items-center px-10 py-15 flex flex-col w-screen text-sm md:px-20 lg:p-30 lg:text-base lg:text-base/7'>
-        <Link href="/#projects" className='fixed top-15 flex items-center w-[90%] gap-2 cursor-pointer hover:scale-105 transition-transform'>
-            <ArrowLeft size={20}/> Back
-        </Link>
+        <div className='fixed top-0 flex items-start w-full px-8 py-6'>
+            <Link href="/#projects" className='flex items-center w-[90%] gap-2 cursor-pointer hover:scale-102 transition-transform'>
+                <ArrowLeft size={20}/> Back
+            </Link>
+        </div>
         <div className='flex flex-col-reverse gap-10 items-center justify-end md:flex-row md:gap-20 lg:gap-50'>
             <div>
                 <div>
