@@ -38,15 +38,15 @@
 
 
 body {
-  background: radial-gradient(ellipse at center, #493738 0%, #463536 5%, #1c1613 98%);
-  min-height: 100vh;
+  background: radial-gradient(ellipse at center, #473334 20%, #1c1613 70%);
+  max-height: 100vh;
   color: var(--foreground);
   font-family: var(--font-inter);
   letter-spacing: 2px;
 }
 
 .light body {
-    background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 5%, #e0d8d0 98%);
+    background: radial-gradient(ellipse at center, #f8f6f6 20%, #dfd9d2 70%);
     color: #1c1613;
 }
 
